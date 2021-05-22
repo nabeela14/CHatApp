@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F8F9FC"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="19sp"
+        android:textColor="#090808"
+        android:fontFamily="sans-serif"/>
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/image"
+        android:layout_below="@+id/ask"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bluetooth"/>
+
+    <Button
+        android:id="@+id/allow"
+        android:layout_below="@+id/image"
+        android:text="Allow"
+        android:textColor="#1A1919"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/button3"/>
+
+    <Button
+        android:id="@+id/deny"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:text="Deny"
+        android:textColor="#141414"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button3"
+        />
+
+
+
+</RelativeLayout>

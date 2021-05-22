@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#B6B9CC"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:padding="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ppic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#93BACC"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ppic"/>
+
+    <EditText
+        android:id="@+id/stname"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:focusable="false"
+        android:layout_below="@+id/ppic"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColorHint="#464343"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/uname"
+        android:drawableRight="@drawable/change"
+        android:padding="20dp"/>
+
+
+    <EditText
+        android:id="@+id/stabt"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/stname"
+        android:hint="About"
+        android:inputType="text"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:focusable="false"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/about"
+        android:drawableRight="@drawable/change"
+        android:textColorHint="#464343"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="150dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/stabt"
+        android:text="Update"
+        android:background="@drawable/button3"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="35dp"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

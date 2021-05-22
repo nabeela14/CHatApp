@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scan">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#8300BCD4" >
+        <TextView
+            android:id="@+id/btn"
+            android:text="SCAN"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:drawableTop="@drawable/scan"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:text="CLICK ME"
+        android:background="@drawable/edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sbtn"
+        android:id="@+id/slist"/>
+
+</RelativeLayout>

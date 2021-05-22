@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BTChatActivity"
+    android:background="#ffff">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/bluetooth_user"/>
+    </LinearLayout>
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_view"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+   <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/list"
+       android:layout_above="@+id/chatting"/>
+
+
+    <LinearLayout
+        android:id="@+id/chatting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edit2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_weight="1"
+            android:hint="Start Typing.."
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:inputType="textCapSentences|textMultiLine"
+            android:background="@null"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:id="@+id/attach"
+            android:onClick="pickFile"
+            android:src="@drawable/ic_attach"
+            android:background="@null"/>
+
+
+        <ImageButton
+            android:id="@+id/send"
+            android:onClick="sendmsg"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:src="@drawable/send"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
