@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+android:layout_width="match_parent"android:layout_height="wrap_content"android:id="@+id/appbar"> 
+<item android:title="Profile" android:iconTintMode="screen" android:id="@+id/profile"/>
+
+<!-- <itemandroid:id="@+id/paired"android:title="Paired Devices"/> -->
+
+
+<item android:title="Online Mode" android:id="@+id/online"/>
+
+<item android:title="LogOut" android:id="@+id/logout"/>
+
+</menu>
